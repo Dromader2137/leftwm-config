@@ -51,9 +51,11 @@
     disable_cursor_reposition_on_resize: false,
     keybind: [
         (command: Execute, value: "alacritty", modifier: ["modkey"], key: "Return"),
+        (command: Execute, value: "floorp", modifier: ["modkey"], key: "w"),
+        (command: Execute, value: "dmenu_run", modifier: ["modkey"], key: "p"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
-        (command: SwapTags, value: "", modifier: ["modkey"], key: "w"),
+        (command: SwapTags, value: "", modifier: ["modkey", "Shift"], key: "w"),
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "k"),
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "j"),
         (command: MoveWindowTop, value: "", modifier: ["modkey", "Shift"], key: "Return"),
