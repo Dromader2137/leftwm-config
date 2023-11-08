@@ -9,6 +9,7 @@ if [ -f "/tmp/leftwm-theme-down" ]; then
 fi
 ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
 
+picom &
 
 #boot picom or compton if it exists
 if [ -x "$(command -v picom)" ]; then
@@ -22,7 +23,7 @@ leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
 #set background
 if [ -x "$(command -v feh)" ]; then
-  feh --bg-scale $SCRIPTPATH/background.jpg
+  feh --randomize --bg-fill ~/Wallpapers
 fi
 
 

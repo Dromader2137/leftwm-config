@@ -53,6 +53,7 @@
         (command: Execute, value: "alacritty", modifier: ["modkey"], key: "Return"),
         (command: Execute, value: "floorp", modifier: ["modkey"], key: "w"),
         (command: Execute, value: "dmenu_run", modifier: ["modkey"], key: "p"),
+        (command: Execute, value: "shutdown now", modifier: ["modkey", "Shift"], key: "Escape"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
         (command: SwapTags, value: "", modifier: ["modkey", "Shift"], key: "w"),
